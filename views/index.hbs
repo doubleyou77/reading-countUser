@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>algorithm</title>
+  <style>
+    body {
+      font-size: 40px;
+    }
+  </style>
+</head>
+<body>
+  <a href="/">이 링크로 이동</a>
+
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script>
+    window.onbeforeunload = () => {
+      axios.post('/');
+      return '';
+    }
+  </script>
+</body>
+</html>
